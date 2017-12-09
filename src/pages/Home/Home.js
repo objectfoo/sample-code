@@ -1,36 +1,53 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import classnames from 'classnames'
-import './home.css'
+import injectStyle from 'react-jss';
+import withRoot from '../../withRoot';
+import Text from '../../components/Text';
 
-export const Home = ({pages, current}) => {
-  return [
-    <h1 className='page-title padding' key='title'>Code samples</h1>,
-    <ul key='page-list' className='page-list'>
-      {pages.map(page => {
-        const isCurrentPage = page.key === current.key
-        const liClassName = classnames({ 'page-link-active': isCurrentPage })
+export const Home = ({pages, currentKey, classes}) => {
 
-        return (
-          <li key={page.key} className={liClassName}>
-            <PageLink
-              active={isCurrentPage}
-              title={page.title}
-              path={page.path}
-            />
-          </li>
-        )
-      })}
-    </ul>
-  ]
+  return (
+    <main className={classes.main}>
+      <Text type='title'>Code samples</Text>
+      <ul className='page-list'>
+        {pages.map(page => {
+          const active = page.key === currentKey
+
+          return (
+            <li key={page.key} className={classnames({
+              [classes['page-link-active']]: active
+            })}>
+              <PageLink active={active} title={page.title} path={page.path} />
+            </li>
+          )
+        })}
+      </ul>
+    </main>
+  )
 }
 
 const PageLink = props => {
-  if (props.active) {
-    return props.title
-  } else {
-    return <Link to={props.path}>{props.title}</Link>
-  }
+  const title = <Text>{props.title}</Text>;
+
+  return props.active
+    ? title
+    : <Link to={props.path}>{title}</Link>;
 }
 
-export default Home
+const styles = theme => {
+  // console.log(theme);
+
+  return {
+    main: {
+      padding: theme.spacing.unit
+    },
+    'page-link-active': {
+      fontWeight: theme.typeography.fontWeightMedium
+    }
+  };
+};
+
+export default withRoot(
+  injectStyle(styles)(Home)
+)

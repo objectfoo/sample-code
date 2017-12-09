@@ -1,0 +1,29 @@
+{
+  "palette": {
+    "primary": {
+      "500": "#2196F3"
+    },
+    "secondary": {
+      "500": "#FF9800"
+    },
+    "error": {
+      "500": "#f44336"
+    },
+    "text": {
+      "primary": "rgba(0, 0, 0, 0.87)",
+      "secondary": "rgba(0, 0, 0, 0.54)",
+      "disabled": "rgba(0, 0, 0, 0.38)"
+    }
+  },
+  "typeography": {
+    "fontFamily": "\"Roboto\", \"Helvetica\", \"Arial\", sans-serif",
+    "fontSize": 15,
+    "lineHeight": 1.6,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500
+  },
+  "spacing": {
+    "unit": 8
+  }
+}
