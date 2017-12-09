@@ -1,0 +1,8 @@
+.page-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.page-list a {
+  display: block;
+}
