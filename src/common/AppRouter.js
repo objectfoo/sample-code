@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {pageMap} from './pages/config';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {pageMap} from './config';
 
-export const App = ({classes}) => {
+export const AppRouter = () => {
   const orderedPages = getOrderedPages(pageMap);
 
   return (
@@ -21,7 +21,7 @@ export const App = ({classes}) => {
   );
 };
 
-export default App;
+export default AppRouter;
 
 export const getOrderedPages = pages =>
   pages.ordered.map(key => pages.byKey[key]);

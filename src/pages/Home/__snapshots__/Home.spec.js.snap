@@ -1,0 +1,753 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should render a list of pages with a fancy title 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    classes={
+        Object {
+            "main": "main",
+            "pageLinkExample": "pageLinkExample",
+            "pageLinkTitle": "pageLinkTitle",
+            "pageList": "pageList",
+            "pageListItem": "pageListItem",
+            "pageListItemActive": "pageListItemActive",
+          }
+    }
+    pages={
+        Array [
+            Object {
+              "component": [Function],
+              "exact": true,
+              "example": "1",
+              "key": "home",
+              "path": "/",
+              "title": "Page Index",
+            },
+            Object {
+              "component": [Function],
+              "exact": true,
+              "example": "2",
+              "key": "other-home",
+              "path": "/other-home",
+              "title": "Other Index",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <StyledText
+          type="title"
+>
+          Code samples
+</StyledText>,
+        <ul
+          className="pageList"
+>
+          <PageListItem
+                    active={false}
+                    classes={
+                              Object {
+                                        "main": "main",
+                                        "pageLinkExample": "pageLinkExample",
+                                        "pageLinkTitle": "pageLinkTitle",
+                                        "pageList": "pageList",
+                                        "pageListItem": "pageListItem",
+                                        "pageListItemActive": "pageListItemActive",
+                                      }
+                    }
+                    page={
+                              Object {
+                                        "component": [Function],
+                                        "exact": true,
+                                        "example": "1",
+                                        "key": "home",
+                                        "path": "/",
+                                        "title": "Page Index",
+                                      }
+                    }
+          />
+          <PageListItem
+                    active={false}
+                    classes={
+                              Object {
+                                        "main": "main",
+                                        "pageLinkExample": "pageLinkExample",
+                                        "pageLinkTitle": "pageLinkTitle",
+                                        "pageList": "pageList",
+                                        "pageListItem": "pageListItem",
+                                        "pageListItemActive": "pageListItemActive",
+                                      }
+                    }
+                    page={
+                              Object {
+                                        "component": [Function],
+                                        "exact": true,
+                                        "example": "2",
+                                        "key": "other-home",
+                                        "path": "/other-home",
+                                        "title": "Other Index",
+                                      }
+                    }
+          />
+</ul>,
+      ],
+      "className": "main",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Code samples",
+          "type": "title",
+        },
+        "ref": null,
+        "rendered": "Code samples",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <PageListItem
+              active={false}
+              classes={
+                            Object {
+                                          "main": "main",
+                                          "pageLinkExample": "pageLinkExample",
+                                          "pageLinkTitle": "pageLinkTitle",
+                                          "pageList": "pageList",
+                                          "pageListItem": "pageListItem",
+                                          "pageListItemActive": "pageListItemActive",
+                                        }
+              }
+              page={
+                            Object {
+                                          "component": [Function],
+                                          "exact": true,
+                                          "example": "1",
+                                          "key": "home",
+                                          "path": "/",
+                                          "title": "Page Index",
+                                        }
+              }
+/>,
+            <PageListItem
+              active={false}
+              classes={
+                            Object {
+                                          "main": "main",
+                                          "pageLinkExample": "pageLinkExample",
+                                          "pageLinkTitle": "pageLinkTitle",
+                                          "pageList": "pageList",
+                                          "pageListItem": "pageListItem",
+                                          "pageListItemActive": "pageListItemActive",
+                                        }
+              }
+              page={
+                            Object {
+                                          "component": [Function],
+                                          "exact": true,
+                                          "example": "2",
+                                          "key": "other-home",
+                                          "path": "/other-home",
+                                          "title": "Other Index",
+                                        }
+              }
+/>,
+          ],
+          "className": "pageList",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "home",
+            "nodeType": "function",
+            "props": Object {
+              "active": false,
+              "classes": Object {
+                "main": "main",
+                "pageLinkExample": "pageLinkExample",
+                "pageLinkTitle": "pageLinkTitle",
+                "pageList": "pageList",
+                "pageListItem": "pageListItem",
+                "pageListItemActive": "pageListItemActive",
+              },
+              "page": Object {
+                "component": [Function],
+                "exact": true,
+                "example": "1",
+                "key": "home",
+                "path": "/",
+                "title": "Page Index",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "other-home",
+            "nodeType": "function",
+            "props": Object {
+              "active": false,
+              "classes": Object {
+                "main": "main",
+                "pageLinkExample": "pageLinkExample",
+                "pageLinkTitle": "pageLinkTitle",
+                "pageList": "pageList",
+                "pageListItem": "pageListItem",
+                "pageListItemActive": "pageListItemActive",
+              },
+              "page": Object {
+                "component": [Function],
+                "exact": true,
+                "example": "2",
+                "key": "other-home",
+                "path": "/other-home",
+                "title": "Other Index",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <StyledText
+            type="title"
+>
+            Code samples
+</StyledText>,
+          <ul
+            className="pageList"
+>
+            <PageListItem
+                        active={false}
+                        classes={
+                                    Object {
+                                                "main": "main",
+                                                "pageLinkExample": "pageLinkExample",
+                                                "pageLinkTitle": "pageLinkTitle",
+                                                "pageList": "pageList",
+                                                "pageListItem": "pageListItem",
+                                                "pageListItemActive": "pageListItemActive",
+                                              }
+                        }
+                        page={
+                                    Object {
+                                                "component": [Function],
+                                                "exact": true,
+                                                "example": "1",
+                                                "key": "home",
+                                                "path": "/",
+                                                "title": "Page Index",
+                                              }
+                        }
+            />
+            <PageListItem
+                        active={false}
+                        classes={
+                                    Object {
+                                                "main": "main",
+                                                "pageLinkExample": "pageLinkExample",
+                                                "pageLinkTitle": "pageLinkTitle",
+                                                "pageList": "pageList",
+                                                "pageListItem": "pageListItem",
+                                                "pageListItemActive": "pageListItemActive",
+                                              }
+                        }
+                        page={
+                                    Object {
+                                                "component": [Function],
+                                                "exact": true,
+                                                "example": "2",
+                                                "key": "other-home",
+                                                "path": "/other-home",
+                                                "title": "Other Index",
+                                              }
+                        }
+            />
+</ul>,
+        ],
+        "className": "main",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Code samples",
+            "type": "title",
+          },
+          "ref": null,
+          "rendered": "Code samples",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <PageListItem
+                active={false}
+                classes={
+                                Object {
+                                                "main": "main",
+                                                "pageLinkExample": "pageLinkExample",
+                                                "pageLinkTitle": "pageLinkTitle",
+                                                "pageList": "pageList",
+                                                "pageListItem": "pageListItem",
+                                                "pageListItemActive": "pageListItemActive",
+                                              }
+                }
+                page={
+                                Object {
+                                                "component": [Function],
+                                                "exact": true,
+                                                "example": "1",
+                                                "key": "home",
+                                                "path": "/",
+                                                "title": "Page Index",
+                                              }
+                }
+/>,
+              <PageListItem
+                active={false}
+                classes={
+                                Object {
+                                                "main": "main",
+                                                "pageLinkExample": "pageLinkExample",
+                                                "pageLinkTitle": "pageLinkTitle",
+                                                "pageList": "pageList",
+                                                "pageListItem": "pageListItem",
+                                                "pageListItemActive": "pageListItemActive",
+                                              }
+                }
+                page={
+                                Object {
+                                                "component": [Function],
+                                                "exact": true,
+                                                "example": "2",
+                                                "key": "other-home",
+                                                "path": "/other-home",
+                                                "title": "Other Index",
+                                              }
+                }
+/>,
+            ],
+            "className": "pageList",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "home",
+              "nodeType": "function",
+              "props": Object {
+                "active": false,
+                "classes": Object {
+                  "main": "main",
+                  "pageLinkExample": "pageLinkExample",
+                  "pageLinkTitle": "pageLinkTitle",
+                  "pageList": "pageList",
+                  "pageListItem": "pageListItem",
+                  "pageListItemActive": "pageListItemActive",
+                },
+                "page": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "example": "1",
+                  "key": "home",
+                  "path": "/",
+                  "title": "Page Index",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "other-home",
+              "nodeType": "function",
+              "props": Object {
+                "active": false,
+                "classes": Object {
+                  "main": "main",
+                  "pageLinkExample": "pageLinkExample",
+                  "pageLinkTitle": "pageLinkTitle",
+                  "pageList": "pageList",
+                  "pageListItem": "pageListItem",
+                  "pageListItemActive": "pageListItemActive",
+                },
+                "page": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "example": "2",
+                  "key": "other-home",
+                  "path": "/other-home",
+                  "title": "Other Index",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Text should render an active Page List Item 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PageListItem
+    active={true}
+    classes={
+        Object {
+            "main": "main",
+            "pageLinkExample": "pageLinkExample",
+            "pageLinkTitle": "pageLinkTitle",
+            "pageList": "pageList",
+            "pageListItem": "pageListItem",
+            "pageListItemActive": "pageListItemActive",
+          }
+    }
+    page={
+        Object {
+            "component": [Function],
+            "exact": true,
+            "example": "1",
+            "key": "home",
+            "path": "/",
+            "title": "Page Index",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <StyledText
+          className="pageLinkExample"
+          component="div"
+          type="body1"
+>
+          Example: 1
+</StyledText>,
+        <div
+          className="pageLinkTitle"
+>
+          Page Index
+</div>,
+      ],
+      "className": "pageListItem pageListItemActive",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Example: 1",
+          "className": "pageLinkExample",
+          "component": "div",
+          "type": "body1",
+        },
+        "ref": null,
+        "rendered": "Example: 1",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Page Index",
+          "className": "pageLinkTitle",
+        },
+        "ref": null,
+        "rendered": "Page Index",
+        "type": "div",
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <StyledText
+            className="pageLinkExample"
+            component="div"
+            type="body1"
+>
+            Example: 1
+</StyledText>,
+          <div
+            className="pageLinkTitle"
+>
+            Page Index
+</div>,
+        ],
+        "className": "pageListItem pageListItemActive",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Example: 1",
+            "className": "pageLinkExample",
+            "component": "div",
+            "type": "body1",
+          },
+          "ref": null,
+          "rendered": "Example: 1",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Page Index",
+            "className": "pageLinkTitle",
+          },
+          "ref": null,
+          "rendered": "Page Index",
+          "type": "div",
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Text should render an active Page List Item 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PageListItem
+    classes={
+        Object {
+            "main": "main",
+            "pageLinkExample": "pageLinkExample",
+            "pageLinkTitle": "pageLinkTitle",
+            "pageList": "pageList",
+            "pageListItem": "pageListItem",
+            "pageListItemActive": "pageListItemActive",
+          }
+    }
+    page={
+        Object {
+            "component": [Function],
+            "exact": true,
+            "example": "2",
+            "key": "other-home",
+            "path": "/other-home",
+            "title": "Other Index",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <StyledText
+          className="pageLinkExample"
+          component="div"
+          type="body1"
+>
+          Example: 2
+</StyledText>,
+        <Link
+          className="pageLinkTitle"
+          replace={false}
+          to="/other-home"
+>
+          Other Index
+</Link>,
+      ],
+      "className": "pageListItem",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Example: 2",
+          "className": "pageLinkExample",
+          "component": "div",
+          "type": "body1",
+        },
+        "ref": null,
+        "rendered": "Example: 2",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Other Index",
+          "className": "pageLinkTitle",
+          "replace": false,
+          "to": "/other-home",
+        },
+        "ref": null,
+        "rendered": "Other Index",
+        "type": [Function],
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <StyledText
+            className="pageLinkExample"
+            component="div"
+            type="body1"
+>
+            Example: 2
+</StyledText>,
+          <Link
+            className="pageLinkTitle"
+            replace={false}
+            to="/other-home"
+>
+            Other Index
+</Link>,
+        ],
+        "className": "pageListItem",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Example: 2",
+            "className": "pageLinkExample",
+            "component": "div",
+            "type": "body1",
+          },
+          "ref": null,
+          "rendered": "Example: 2",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Other Index",
+            "className": "pageLinkTitle",
+            "replace": false,
+            "to": "/other-home",
+          },
+          "ref": null,
+          "rendered": "Other Index",
+          "type": [Function],
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

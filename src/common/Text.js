@@ -42,7 +42,9 @@ const styles = theme => {
   };
 };
 
-export default injectStyle(styles)(Text);
+const StyledText = injectStyle(styles)(Text);
+StyledText.displayName = 'StyledText';
+export default StyledText;
 
 const componentFromType = key => ({
   body1: 'p',

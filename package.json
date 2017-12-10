@@ -30,5 +30,12 @@
       "node": true,
       "browser": true
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js}",
+      "!src/test/**/*.*",
+      "!src/registerServiceWorker.js"
+    ]
   }
 }

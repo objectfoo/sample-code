@@ -1,4 +1,4 @@
-import Home from './Home/Home';
+import Home from '../../pages/Home/Home';
 export {Home};
 
 export const pageMap = {
@@ -9,7 +9,7 @@ export const pageMap = {
       component: Home,
       path: '/',
       exact: true,
-      figure: '1'
+      example: '1'
     },
     'other-home': {
       key: 'other-home',
@@ -17,7 +17,7 @@ export const pageMap = {
       component: Home,
       path: '/other-home',
       exact: true,
-      figure: '2'
+      example: '2'
     }
   },
   ordered: ['home', 'other-home']

@@ -1,11 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import classnames from 'classnames';
 import injectStyle from 'react-jss';
-import enhanceWithRoot from '../../enhanceWithRoot';
+import enhanceWithRoot from '../../common/enhanceWithRoot';
+import PageListItem from './PageListItem';
 import Text from '../../common/Text';
 
-export const Home = ({pages, currentKey, classes, active}) => {
+export const Home = ({pages = [], currentKey, classes, active}) => {
   return (
     <main className={classes.main}>
       <Text type='title'>Code samples</Text>
@@ -20,28 +19,6 @@ export const Home = ({pages, currentKey, classes, active}) => {
         })}
       </ul>
     </main>
-  );
-};
-
-const PageListItem = ({active, page, classes}) => {
-  const liClassName = classnames(
-    classes.pageListItem,
-    { [classes['pageListItemActive']]: active }
-  );
-
-  return (
-    <li className={liClassName}>
-      <Text className={classes.pageLinkFigure} type='body1' component='div'>
-        {`Figure ${page.figure}`}
-      </Text>
-      {active ? (
-        <div className={classes.pageLinkTitle}>{page.title}</div>
-      ) : (
-        <Link
-          to={page.path}
-          className={classes.pageLinkTitle}>{page.title}</Link>
-      )}
-    </li>
   );
 };
 
@@ -62,7 +39,7 @@ const styles = ({spacing, typeography}) => {
     pageListItemActive: {
       fontWeight: typeography.fontWeightMedium
     },
-    pageLinkFigure: {
+    pageLinkExample: {
       padding: spacing.unit / 2,
       flex: 'none'
     },

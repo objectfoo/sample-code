@@ -1,7 +1,6 @@
-
-import React, { Component } from 'react';
+import React from 'react';
 import injectSheet, {ThemeProvider} from 'react-jss';
-import theme from './theme.json';
+import theme from '../theme.json';
 
 let AppWrapper = props => props.children;
 const styles = theme => {
@@ -30,7 +29,7 @@ const styles = theme => {
 AppWrapper = injectSheet(styles)(AppWrapper);
 
 function enhanceWithRoot (BaseComponent) {
-  class enhanceWithRoot extends Component {
+  class enhanceWithRoot extends React.Component {
     componentDidMount () {
       // Remove the server-side injected CSS.
       const jssStyles = document.querySelector('#jss-server-side');
@@ -49,6 +48,8 @@ function enhanceWithRoot (BaseComponent) {
       );
     }
   }
+
+  enhanceWithRoot.displayName = 'enhanceWithRoot';
 
   return enhanceWithRoot;
 }
