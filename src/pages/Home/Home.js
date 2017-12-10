@@ -5,44 +5,69 @@ import injectStyle from 'react-jss';
 import withRoot from '../../withRoot';
 import Text from '../../components/Text';
 
-export const Home = ({pages, currentKey, classes}) => {
+export const Home = ({pages, currentKey, classes, active}) => {
   return (
     <main className={classes.main}>
       <Text type='title'>Code samples</Text>
-      <ul className='page-list'>
+      <ul className={classes.pageList}>
         {pages.map(page => {
-          const active = page.key === currentKey;
-
-          return (
-            <li key={page.key} className={classnames({
-              [classes['page-link-active']]: active
-            })}>
-              <PageLink active={active} title={page.title} path={page.path} />
-            </li>
-          );
+          return <PageListItem {...{
+            active: page.key === currentKey,
+            page,
+            classes
+          }} />;
         })}
       </ul>
     </main>
   );
 };
 
-const PageLink = props => {
-  const title = <Text>{props.title}</Text>;
+const PageListItem = ({active, page, classes}) => {
+  const liClassName = classnames(
+    classes.pageListItem,
+    { [classes['pageListItemActive']]: active }
+  );
 
-  return props.active
-    ? title
-    : <Link to={props.path}>{title}</Link>;
+  return (
+    <li className={liClassName}>
+      <Text className={classes.pageLinkFigure} type='body1' component='div'>
+        {`Figure ${page.figure}`}
+      </Text>
+      {active ? (
+        <div className={classes.pageLinkTitle}>{page.title}</div>
+      ) : (
+        <Link
+          to={page.path}
+          className={classes.pageLinkTitle}>{page.title}</Link>
+      )}
+    </li>
+  );
 };
 
-const styles = theme => {
+const styles = ({spacing, typeography}) => {
   // console.log(theme);
 
   return {
     main: {
-      padding: theme.spacing.unit
+      padding: spacing.unit
     },
-    'page-link-active': {
-      fontWeight: theme.typeography.fontWeightMedium
+    pageList: {
+      listStyleType: 'none',
+      paddingLeft: 0
+    },
+    pageListItem: {
+      display: 'flex'
+    },
+    pageListItemActive: {
+      fontWeight: typeography.fontWeightMedium
+    },
+    pageLinkFigure: {
+      padding: spacing.unit / 2,
+      flex: 'none'
+    },
+    pageLinkTitle: {
+      padding: spacing.unit / 2,
+      flex: 'auto'
     }
   };
 };

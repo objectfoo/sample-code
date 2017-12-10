@@ -9,7 +9,7 @@ export const pageMap = {
       component: Home,
       path: '/',
       exact: true,
-      description: 'Sample code index'
+      figure: '1'
     },
     'other-home': {
       key: 'other-home',
@@ -17,7 +17,7 @@ export const pageMap = {
       component: Home,
       path: '/other-home',
       exact: true,
-      description: 'test route'
+      figure: '2'
     }
   },
   ordered: ['home', 'other-home']

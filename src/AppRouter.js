@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {pageMap} from './pages/index';
+import {pageMap} from './pages/config';
 
 export const App = ({classes}) => {
   const orderedPages = getOrderedPages(pageMap);
