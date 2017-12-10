@@ -45,4 +45,26 @@ describe('Text', () => {
     const wrapper = shallow(<Text classes={mockClasses} type='body1' component='div' />);
     expect(wrapper.find('div').length).toEqual(1);
   });
+
+  it('passes through className', () => {
+    const expected = 'test';
+    const wrapper = shallow(<Text classes={mockClasses} className={expected} />);
+
+    expect(wrapper.find('span').prop('className')).toEqual(expected);
+  });
+
+  it('merges className with default classes', () => {
+    const expected = 'test';
+    const expectedType = 'body1';
+
+    const wrapper = shallow(
+      <Text
+        classes={mockClasses}
+        type={expectedType}
+        className={expected}
+      />
+    );
+
+    expect(wrapper.find('p').prop('className')).toContain(`${expected} ${expectedType}`);
+  });
 });

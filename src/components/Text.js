@@ -8,12 +8,14 @@ export const Text = ({
   classes,
   gutterBottom,
   gutterTop,
+  className,
   children
 }) => {
   const Component = component || componentFromType(type);
 
   return (
     <Component className={classnames(
+      className,
       classes[type],
       { [classes.gutterBottom]: gutterBottom },
       { [classes.gutterTop]: gutterTop }
