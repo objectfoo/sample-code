@@ -16,11 +16,11 @@ export const Text = ({
     <Component className={classnames(
       classes[type],
       { [classes.gutterBottom]: gutterBottom },
-      { [classes.gutterTop]: gutterTop },
+      { [classes.gutterTop]: gutterTop }
     )}>
       {children}
     </Component>
-  )
+  );
 };
 
 const styles = theme => {
@@ -37,10 +37,10 @@ const styles = theme => {
     gutterTop: {
       marginTop: theme.spacing.unit
     }
-  }
-}
+  };
+};
 
-export default injectStyle(styles)(Text)
+export default injectStyle(styles)(Text);
 
 const componentFromType = key => ({
   body1: 'p',

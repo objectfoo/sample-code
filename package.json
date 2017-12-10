@@ -11,14 +11,24 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "bike-shedd": "semistandard --verbose | snazzy",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run bike-shed && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "react-test-renderer": "^16.2.0"
+    "react-test-renderer": "^16.2.0",
+    "semistandard": "^11.0.0",
+    "snazzy": "^7.0.0"
+  },
+  "semistandard": {
+    "env": {
+      "jest": true,
+      "node": true,
+      "browser": true
+    }
   }
 }

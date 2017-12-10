@@ -1,5 +1,5 @@
-import Home from './Home/Home'
-export {Home}
+import Home from './Home/Home';
+export {Home};
 
 export const pageMap = {
   byKey: {
@@ -21,4 +21,4 @@ export const pageMap = {
     }
   },
   ordered: ['home', 'other-home']
-}
+};

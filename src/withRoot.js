@@ -1,8 +1,7 @@
 
 import React, { Component } from 'react';
-import {ThemeProvider} from 'react-jss';
+import injectSheet, {ThemeProvider} from 'react-jss';
 import theme from './theme.json';
-import injectSheet from 'react-jss';
 
 let AppWrapper = props => props.children;
 const styles = theme => {
@@ -25,14 +24,14 @@ const styles = theme => {
         height: '100%'
       }
     }
-  }
-}
+  };
+};
 
 AppWrapper = injectSheet(styles)(AppWrapper);
 
-function withRoot(BaseComponent) {
+function withRoot (BaseComponent) {
   class WithRoot extends Component {
-    componentDidMount() {
+    componentDidMount () {
       // Remove the server-side injected CSS.
       const jssStyles = document.querySelector('#jss-server-side');
       if (jssStyles && jssStyles.parentNode) {
@@ -40,7 +39,7 @@ function withRoot(BaseComponent) {
       }
     }
 
-    render() {
+    render () {
       return (
         <ThemeProvider theme={theme}>
           <AppWrapper>

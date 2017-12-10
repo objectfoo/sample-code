@@ -1,18 +1,17 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import classnames from 'classnames'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import classnames from 'classnames';
 import injectStyle from 'react-jss';
 import withRoot from '../../withRoot';
 import Text from '../../components/Text';
 
 export const Home = ({pages, currentKey, classes}) => {
-
   return (
     <main className={classes.main}>
       <Text type='title'>Code samples</Text>
       <ul className='page-list'>
         {pages.map(page => {
-          const active = page.key === currentKey
+          const active = page.key === currentKey;
 
           return (
             <li key={page.key} className={classnames({
@@ -20,12 +19,12 @@ export const Home = ({pages, currentKey, classes}) => {
             })}>
               <PageLink active={active} title={page.title} path={page.path} />
             </li>
-          )
+          );
         })}
       </ul>
     </main>
-  )
-}
+  );
+};
 
 const PageLink = props => {
   const title = <Text>{props.title}</Text>;
@@ -33,7 +32,7 @@ const PageLink = props => {
   return props.active
     ? title
     : <Link to={props.path}>{title}</Link>;
-}
+};
 
 const styles = theme => {
   // console.log(theme);
@@ -50,4 +49,4 @@ const styles = theme => {
 
 export default withRoot(
   injectStyle(styles)(Home)
-)
+);
