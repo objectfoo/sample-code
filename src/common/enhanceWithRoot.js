@@ -1,6 +1,6 @@
 import React from 'react';
 import injectSheet, {ThemeProvider} from 'react-jss';
-import theme from '../theme.json';
+import theme from './theme.json';
 
 let AppWrapper = props => props.children;
 const styles = theme => {
