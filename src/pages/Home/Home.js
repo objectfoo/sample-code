@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import classnames from 'classnames';
 import injectStyle from 'react-jss';
-import withRoot from '../../withRoot';
-import Text from '../../components/Text';
+import enhanceWithRoot from '../../enhanceWithRoot';
+import Text from '../../common/Text';
 
 export const Home = ({pages, currentKey, classes, active}) => {
   return (
@@ -12,6 +12,7 @@ export const Home = ({pages, currentKey, classes, active}) => {
       <ul className={classes.pageList}>
         {pages.map(page => {
           return <PageListItem {...{
+            key: page.key,
             active: page.key === currentKey,
             page,
             classes
@@ -72,6 +73,6 @@ const styles = ({spacing, typeography}) => {
   };
 };
 
-export default withRoot(
+export default enhanceWithRoot(
   injectStyle(styles)(Home)
 );

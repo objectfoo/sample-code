@@ -29,8 +29,8 @@ const styles = theme => {
 
 AppWrapper = injectSheet(styles)(AppWrapper);
 
-function withRoot (BaseComponent) {
-  class WithRoot extends Component {
+function enhanceWithRoot (BaseComponent) {
+  class enhanceWithRoot extends Component {
     componentDidMount () {
       // Remove the server-side injected CSS.
       const jssStyles = document.querySelector('#jss-server-side');
@@ -50,7 +50,7 @@ function withRoot (BaseComponent) {
     }
   }
 
-  return WithRoot;
+  return enhanceWithRoot;
 }
 
-export default withRoot;
+export default enhanceWithRoot;
