@@ -11,7 +11,7 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "bike-shedd": "semistandard --verbose | snazzy",
+    "bike-shed": "semistandard --verbose | snazzy",
     "start": "react-scripts start",
     "build": "npm run bike-shed && react-scripts build",
     "test": "react-scripts test --env=jsdom",
