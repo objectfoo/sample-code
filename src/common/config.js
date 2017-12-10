@@ -1,4 +1,5 @@
 import Home from '../pages/Home/Home';
+import {CodeSample} from '../pages/CodeSample/CodeSample';
 export {Home};
 
 export const pageMap = {
@@ -14,7 +15,7 @@ export const pageMap = {
     'code-sample-example': {
       key: 'code-sample-example',
       title: 'Code sample example',
-      component: Home,
+      component: CodeSample,
       path: '/code-sample-example',
       exact: true,
       example: '2'
