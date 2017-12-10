@@ -1,6 +1,5 @@
 import Home from '../pages/Home/Home';
-import {CodeSample} from '../pages/CodeSample/CodeSample';
-export {Home};
+import CodeSample from '../pages/CodeSample/CodeSample';
 
 export const pageMap = {
   byKey: {

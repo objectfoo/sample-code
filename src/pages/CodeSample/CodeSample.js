@@ -2,11 +2,11 @@ import React from 'react';
 import injectStyle from 'react-jss';
 import enhanceWithRoot from '../../common/enhanceWithRoot';
 
-export const Main = ({classes}) => {
+export const CodeSample = ({classes}) => {
   return (
-    <div className={classes.root}>
+    <main className={classes.root}>
       <h1 className={classes.headline}>Hi</h1>
-    </div>
+    </main>
   );
 };
 
@@ -22,5 +22,5 @@ const styles = theme => ({
 });
 
 export default enhanceWithRoot(
-  injectStyle(styles)(Main)
+  injectStyle(styles)(CodeSample)
 );

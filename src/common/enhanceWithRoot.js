@@ -3,8 +3,8 @@ import injectSheet, {ThemeProvider} from 'react-jss';
 import theme from './theme.json';
 
 let AppWrapper = props => props.children;
+
 const styles = theme => {
-  // console.log(theme);
   return {
     '@global': {
       'body': {
@@ -28,8 +28,8 @@ const styles = theme => {
 
 AppWrapper = injectSheet(styles)(AppWrapper);
 
-function enhanceWithRoot (BaseComponent) {
-  class enhanceWithRoot extends React.Component {
+export default function enhanceWithRoot (BaseComponent) {
+  return class extends React.Component {
     componentDidMount () {
       // Remove the server-side injected CSS.
       const jssStyles = document.querySelector('#jss-server-side');
@@ -47,11 +47,5 @@ function enhanceWithRoot (BaseComponent) {
         </ThemeProvider>
       );
     }
-  }
-
-  enhanceWithRoot.displayName = 'enhanceWithRoot';
-
-  return enhanceWithRoot;
+  };
 }
-
-export default enhanceWithRoot;

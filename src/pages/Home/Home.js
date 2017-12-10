@@ -23,8 +23,6 @@ export const Home = ({pages = [], currentKey, classes, active}) => {
 };
 
 const styles = ({spacing, typeography}) => {
-  // console.log(theme);
-
   return {
     main: {
       padding: spacing.unit

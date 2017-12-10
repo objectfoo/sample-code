@@ -13,7 +13,7 @@
   "scripts": {
     "bike-shed": "semistandard --verbose | snazzy",
     "start": "react-scripts start",
-    "build": "npm run bike-shed && react-scripts build",
+    "build": "npm run bike-shed && npm run test -- --coverage && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
